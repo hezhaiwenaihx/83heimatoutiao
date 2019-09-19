@@ -68,7 +68,7 @@ export default {
             this.$router.push('/home')
           }).catch(() => {
             this.$message({
-              type: 'warning',
+              type: 'warning ',
               message: '您好你的手机号或验证码错误'
             })
           })
