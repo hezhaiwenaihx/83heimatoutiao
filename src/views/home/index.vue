@@ -2,14 +2,16 @@
 <!-- 这是一个↓大容器 -->
  <el-container>
  <!-- 左侧导航栏组件 -->
- <el-aside>
+ <el-aside style="width:200px ; overflow:hidden ;background-color:#323745">
    <layout-aside></layout-aside>
  </el-aside>
  <!-- 下面右侧的大容器 -->
  <el-container>
-    <el-header>我是右侧头部</el-header>
+    <el-header>
+      <layout-header> </layout-header>
+    </el-header>
     <el-main>
-     我是内容区
+    <router-view></router-view>
     </el-main>
  </el-container>
  </el-container>
@@ -17,11 +19,10 @@
 
 <script>
 // 左侧导航栏页面引入
-import layoutAside from '../../components/home/layout-aside'
 
 export default {
   components: {
-    'layout-aside': layoutAside
+
   }
 }
 </script>

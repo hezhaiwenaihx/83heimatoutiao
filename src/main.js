@@ -6,8 +6,10 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import './components/styles/index.less'
 import axios from 'axios'
+import component from './components'
 
 // 映入样式
+Vue.use(component)
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 Vue.use(ElementUI)
